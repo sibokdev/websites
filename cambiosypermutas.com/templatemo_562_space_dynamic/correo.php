@@ -13,7 +13,7 @@ if(isset($_POST['enviar'])){
 $header .= "X-Mailer: PHP/" . phpversion();
 $correo = @mail($ecorreo,$mensaje,$apellidos,$nombre);
 if($mail){
-    echo "<h4>!Mail enviado</h4>";
+    echo "<h4>Correo enviado</h4>";
 }
 
 $header .= "Mime_Version: 1.0 \r\n";
